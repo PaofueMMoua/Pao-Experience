@@ -1,0 +1,32 @@
+body {
+    width:100vw;
+    height:100vh;
+    overflow:none;
+    display:flex;
+    flex-direction: column;
+    padding:0 7vw
+}
+
+button {
+    width:10vw;
+    height:7.5vw;
+}
+
+table, tr, td {
+    width:fit-content;
+    height:fit-content;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.active {
+    background-color: #50C878;
+}
+
