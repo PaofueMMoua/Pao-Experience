@@ -1,4 +1,6 @@
-var frmvalidator = new Validator(“contactform”);
-frmvalidator.addValidation(“name”,”req”,”Please provide your name”);
-frmvalidator.addValidation(“email”,”req”,”Please provide your email”);
-frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
+$('#send').on('click', function(e) {
+    e.preventDefault();
+    subject = $('#subject').val();
+    body = $('#body').val();
+    window.location = "mailto:paofuemmoua@gmail.com?subject=" + subject + "&body=" + body;
+  });
