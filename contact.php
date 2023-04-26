@@ -24,16 +24,66 @@
         </ul>
     </header>
 
-<div class="main">
-    <h1>RESUME</h1>
-</div>
 
-<div class="main green long column resume">
+    <form action="mailto:paofuemmoua@gmail.com" method="post" enctype="multipart/form-data" name="emailtest">
+        Name : <input type="text" name="Visitor"> <br><br>
+        Message : <textarea name="VisitorComment" cols="20" rows="4"></textarea> <br><br>
+        <input type="submit" value="Submit">
+     </form>
+     
+<?php
+$errors = ”;
+$myemail = 'PaofueMMoua@gmail.com';
+if(empty($_POST[‘name’]) || empty($_POST[’email’]) || empty($_POST[‘message’])){
 
-    <iframe class="resume_page"
-        src="https://docs.google.com/document/d/e/2PACX-1vRtfiqGlGuavtcqGMJtOFljWYW505i09RTwY4g0iuTX85cbB3VumnLwFYIEg2BLK8s59lQ_1gzV-hVE/pub?embedded=true"></iframe>
-    <a href="./img/Paofue Moua - Resume.pdf">Press here for a download</a>
-</div>
+$errors .= “\n Error: all fields are required”;
+
+}
+
+$name = $_POST[‘name’];
+
+$email_address = $_POST[’email’];
+
+$message = $_POST[‘message’];
+
+if (!preg_match(
+
+“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
+
+{
+
+$errors .= “\n Error: Invalid email address”;
+
+}
+
+if( empty($errors))
+
+{
+
+$to = $myemail;
+
+$email_subject = “Contact form submission: $name”;
+$email_body = “You have received a new message. “.
+
+” Here are the details:\n Name: $name \n “.
+
+“Email: $email_address\n Message \n $message”;
+
+$headers = “From: $myemail\n”;
+
+$headers .= “Reply-To: $email_address”;
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the ‘thank you’ page
+
+header(‘Location: contact-form-thank-you.html’);
+
+}
+
+?>
+
+
     <footer class="row main dkgreen foot">
         <a href="./index.html"><img src="./img/PM.png" alt="Logo" class="Logo"></a>
         <div class="column">
@@ -51,6 +101,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/test.js"></script>
     </body>
     
     </html>
