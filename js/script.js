@@ -1,28 +1,9 @@
-let kick = document.querySelectorAll('.kick_btn');
-const play = document.getElementsByClassName('.play');
+const project = document.querySelector('.project');
+const btn = document.querySelector('.btn');
+const input = document.querySelector('.input');
 
-let playing = false;
 
-play.addEventListener('click', () => {
-    if (playing === false) {
-        playing = true
-    }
-    else {
-        playing = false
-    }
+btn.addEventListener('hover', () => {
+    search.classList.toggle('active');
+    input.focus()
 })
-
-kick.addEventListener('click', kick())
-
-function kick() {
-    if (kick.classList.contains('active')) {
-        kick.classList.remove('active');
-    }
-    else {
-        kick.classList.add('active');
-    }
-}
-
-while (playing == true) {
-    
-}
