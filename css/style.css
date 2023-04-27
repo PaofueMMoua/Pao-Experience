@@ -47,19 +47,24 @@ body {
     height:fit-content;
 }
 
-.HLD-img {
+.btn {
     position:absolute;
-    width:70vw;
+    width:50px;
     border:0px;
+    left:0px;
+    top:0;
+    transition:transform 1s ease;
+    cursor: pointer;
+    background-repeat:no-repeat;
     height:50vh;
     background-image: url(../img/HLD_img.png);
     background-color:#16835b;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
-    overflow:none;
+    overflow:none; */
 }
 
 /* continuing */
