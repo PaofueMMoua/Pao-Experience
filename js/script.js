@@ -1,9 +1,9 @@
-const project = document.querySelector('.project');
+const search = document.querySelector('.search');
 const btn = document.querySelector('.btn');
 const input = document.querySelector('.input');
 
 
-btn.addEventListener('hover', () => {
+btn.addEventListener('click', () => {
     search.classList.toggle('active');
     input.focus()
 })
