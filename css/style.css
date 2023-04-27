@@ -7,6 +7,10 @@ body {
     background-color: #D8F4FA;
 }
 
+.HLD {
+    background-color:#16835b
+}
+
 .abt {
     background-color: #F6D8FA;
 }
@@ -124,6 +128,15 @@ h6 {
 
 .dkgreen {
     background-color: #79DBB7;
+}
+
+.port-main:hover {
+    color:black;
+    background: radial-gradient( #5aa489,#79DBB7, #9FFFD1);
+}
+
+.port-main:hover h1 {
+    color:black
 }
 
 
