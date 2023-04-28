@@ -9,20 +9,35 @@ body {
 
 /* Experimenting with project */
 
-.search {
-    background-color: blue;
-    height: 50px;
-    position: relative;
+.HLD {
+    background-color:#16835b
 }
 
-.search input {
-    background-color: antiquewhite;
+.search {
+    height: 50vh;
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:50vw
+}
+
+.btn {
+    background: url(../img/HLD_img.png);
+    background-color:#D8F4FA;
     border: 0;
-    font-size: 20px;
-    padding: 15px;
-    height: 50px;
-    width: 50px;
-    transition: width 1s ease;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:50vh;
+    width:60vw;
+    transition: transform 1s ease;
 }
 
 .btn:focus,
@@ -30,24 +45,15 @@ body {
     outline: none;
 }
 
-.search.active .input {
-    width: 200px;
-}
-
 .search.active .btn {
-    transform: translateX(198px);
+    transform: translateX(-198px);
 }
 
-.HLD {
-    background-color:#16835b
+.search.active p {
+    transform: translateX(198);
 }
 
-.btn {
-    width:fit-content;
-    height:fit-content;
-}
-
-.btn {
+/* .btn {
     position:absolute;
     width:50px;
     border:0px;
@@ -59,18 +65,22 @@ body {
     height:50vh;
     background-image: url(../img/HLD_img.png);
     background-color:#16835b;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
-    overflow:none; */
-}
+    overflow:none; 
+} */
 
 /* continuing */
 
 .abt {
     background-color: #F6D8FA;
+}
+
+.fit {
+    height:fit-content
 }
 
 .Logo {
