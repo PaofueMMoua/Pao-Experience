@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding:0;
+    cursor:url(../img/HLD_img.png), default;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
     background-color:#D8F4FA;
     border: 0;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size:auto;
     background-position: center;
     cursor: pointer;
     font-size: 2rem;
@@ -46,11 +47,13 @@ body {
 }
 
 .search.active .btn {
-    transform: translateX(-198px);
+    transform: translateX(-30vw);
 }
 
 .search.active p {
-    transform: translateX(198);
+    transition:transform 1s ease;
+    transform: translateX(25vw);
+    width:40vw;
 }
 
 /* .btn {
