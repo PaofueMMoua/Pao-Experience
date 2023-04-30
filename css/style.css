@@ -14,7 +14,9 @@ body {
     background-color:#16835b
 }
 
-.search {
+.search,
+.search2,
+.search3 {
     height: 50vh;
     position: relative;
     display:flex;
@@ -25,7 +27,7 @@ body {
 }
 
 .btn {
-    background: url(../img/HLD_img.png);
+    background:url(../img/Delve_img.png);
     background-color:#D8F4FA;
     border: 0;
     background-repeat:no-repeat;
@@ -41,16 +43,59 @@ body {
     transition: transform 1s ease;
 }
 
+.btn3 {
+    background:url(../img/HLD_img.png);
+        background-color: #D8F4FA;
+            border: 0;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            cursor: pointer;
+            font-size: 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50vh;
+            width: 60vw;
+            transition: transform 1s ease;
+}
+
+.btn2 {
+    background:url(../img/concil_img.png);
+        background-color: #D8F4FA;
+            border: 0;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            cursor: pointer;
+            font-size: 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50vh;
+            width: 60vw;
+            transition: transform 1s ease;
+}
+
+
 .btn:focus,
-.input:focus {
+.input:focus,
+.btn2:focus,
+.input2:focus,
+.btn3:focus,
+.input3:focus {
     outline: none;
 }
 
-.search.active .btn {
+.search.active .btn,
+.search2.active .btn2,
+.search3.active .btn3 {
     transform: translateX(-30vw);
 }
 
-.search.active p {
+.search.active p,
+.search2.active p,
+.search3.active p {
     transition:transform 1s ease;
     transform: translateX(25vw);
     width:40vw;

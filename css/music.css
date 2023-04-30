@@ -1,11 +1,4 @@
-body {
-    width:100vw;
-    height:100vh;
-    overflow:none;
-    display:flex;
-    flex-direction: column;
-    padding:0 7vw
-}
+
 
 button {
     width:10vw;
@@ -21,12 +14,13 @@ table, tr, td {
 }
 
 .center {
+    margin: 2vw, 2vw;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.active {
+.soundactive {
     background-color: #50C878;
 }
 
