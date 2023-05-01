@@ -1,7 +1,8 @@
-let button = document.querySelectorAll('musicButton');
+let btn4 = document.getElementsByClassName('musicButton');
 
-
-btn3.addEventListener('click', () => {
-    search3.classList.toggle('active');
-    input3.focus()
-})
+for(let btn of btn4) {
+    btn.addEventListener('click', function(){
+        console.log("test")
+        btn.classList.toggle('active_music');
+    })
+}

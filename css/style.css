@@ -1,4 +1,4 @@
-/*  */
+
 * {
     margin:0;
     padding:0;
@@ -100,6 +100,12 @@ body {
     transition:transform 1s ease;
     transform: translateX(25vw);
     width:40vw;
+}
+
+.special_song {
+    width:50vw;
+    font-size:1vw;
+    margin:0px 5vw;
 }
 
 /* .btn {
