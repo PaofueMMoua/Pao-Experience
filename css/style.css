@@ -164,7 +164,7 @@ header {
     flex-direction:row;
     width:100vw;
     align-items:center;
-    justify-content:space-evenly
+    justify-content:space-evenly;
 }
 
 .nav-item {
@@ -172,8 +172,17 @@ header {
     display:flex;
     align-items:center;
     justify-content:center;
-
+    border:solid black;
+    border-radius: 10px 0px;
+    padding:15px;
 }
+
+.nav-item :first-child {
+    border:none;
+    border-radius: 0px;
+    padding:0px;
+}
+
 
 .nav-item a {
     text-decoration: none;
@@ -181,6 +190,14 @@ header {
     font-size: large;
     font-weight: bold;
     font-family :"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    
+}
+
+.nav-item :hover {
+    background: linear-gradient(125deg, #7ED55B,#8C52FF ); 
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    transition: all 250ms ease; 
 }
 
 h1 {
