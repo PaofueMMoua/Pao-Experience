@@ -1,55 +1,17 @@
-// // let kick = Audio('');
-// // let snare = Audio('');
-// // let hihat_open = Audio('');
-// // let hihat_close = Audio('');
+// const kick = new Audio('.Kick.mp4');
+// const snare = Audio('');
+// const hihat_open = Audio('');
+// const hihat_close = Audio('');
 
+// const kick_btn = document.getElementsByClassName('kick_btn');
+// const snare_btn = document.querySelectorAll('snare_btn');
+// const hihat_open_btn = document.querySelectorAll('hihat_open')
+// const hihat_close_btn = document.querySelectorAll('hihat_close')
 
-// let btn4 = document.getElementsByClassName('musicButton');
+// kick_btn.addEventListener('click', function (e) {
+//     console.log('testing')
+// })
 
-// for(let btn of btn4) {
-//     btn.addEventListener('click', function(){
-//         console.log("test")
-//         btn.classList.toggle('active_music');
-//     })
-// }
-
-// // let btn5 = document.querySelectorAll('kick_btn');
-
-// // for (let btn of btn5) {
-// //     btn.addEventListener('click', function () {
-// //         if (btn.classList.contains('active_music')) {
-// //             kick.play()
-// //         }
-// //     })
-// // }
-
-// // let btn6 = document.querySelectorAll('snare_btn');
-
-// // for (let btn of btn6) {
-// //     btn.addEventListener('click', function () {
-// //         if (btn.classList.contains('active_music')) {
-// //             snare.play()
-// //         }
-// //     })
-// // }
-
-// // let btn7 = document.querySelectorAll('hihat_open')
-
-// // for (let btn of btn7) {
-// //     btn.addEventListener('click', function () {
-// //         if (btn.classList.contains('active_music')) {
-// //             hihat_open.play()
-// //         }
-// //     })
-// // }
-
-// // let btn8 = document.querySelectorAll('hihat_close')
-
-// // for (let btn of btn8) {
-// //     btn.addEventListener('click', function () {
-// //         if (btn.classList.contains('active_music')) {
-// //             hihat_close.play()
-// //         }
-// //     })
-// // }
-
+let playSound = function (soundFile) {
+    $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
+}
