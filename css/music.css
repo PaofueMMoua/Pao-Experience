@@ -93,7 +93,7 @@ table, tr, td {
     margin: 0 auto;
     padding: 0 1.25rem;
     font-family: 'Lato', sans-serif;
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -116,7 +116,7 @@ table, tr, td {
 
 * {
     -ms-overflow-style: none;
-} */
+} 
 
 ol,
 li {
