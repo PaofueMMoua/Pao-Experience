@@ -14,5 +14,5 @@
 
 const kick = new Audio('/Kick.mp3');
 const snare = new Audio('/Snare.mp3');
-const hihat_close = new Audio('/hihat_close');
-const hihat_open = new Audio('/hihat_open');
+const hihat_close = new Audio('/Hihat_Close');
+const hihat_open = new Audio('/Hihat_Open');
