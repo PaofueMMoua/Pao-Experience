@@ -337,7 +337,7 @@ h6 {
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
 
 .dropdown-content a:hover {
     background: linear-gradient(133deg, #7ED55B,#8C52FF ); 
@@ -353,6 +353,13 @@ h6 {
     display:none;
 }
 
+hr {
+    background-color:black;
+    color:black;
+    width:100vw;
+    height: 1px;
+}
+
 /* Mobile */
 @media screen and (max-width: 900px) {
     .nav-item {
@@ -366,5 +373,9 @@ h6 {
     .logo {
         position:absolute;
         right: 0px;
+    }
+
+    p {
+        font-size:2vw
     }
 }

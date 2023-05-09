@@ -12,6 +12,7 @@
 //     console.log('testing')
 // })
 
-let playSound = function (soundFile) {
-    $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
-}
+const kick = new Audio('/Kick.mp3');
+const snare = new Audio('/Snare.mp3');
+const hihat_close = new Audio('/hihat_close');
+const hihat_open = new Audio('/hihat_open');
