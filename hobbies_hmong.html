@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pao-Experience</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <link rel="icon" href="./img/icon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/music.css">
+</head>
+
+<body class="abt">
+    <header>
+        <ul class="nav-bar">
+            <a href="index.html"><img src="./img/PM.png" alt="Logo" class="Logo"></a>
+            <li class="nav-item"><a href="index.html">Tsev</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item"><a href="./resume.html">Resume</a></li>
+            <li class="nav-item"><a href="./Portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="dropdown">
+            <div class="dropbtn" onclick="menu()">Menu
+            </div>
+            <div class="dropdown-content">
+                <a href="index.html">Tsev</a>
+                <a href="./about.html">About</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./Portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+<section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+                <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+            </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        </li>
+    </ol>
+    <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+        </ol>
+    </aside>
+</section>
+    
+<div class="MUSIC-main">
+        <table>
+            <tr class="center">
+                <td class="center">
+                    <h2>Make something?</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="musicButton" onclick="kick.play()">Kick</button>
+                    <button class="snare_btn musicButton"onclick="snare.play()">Snare</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="hihat_closed_btn musicButton"onclick="hihat_close.play()">Hihat Closed</button>
+                    <button class="hihat_open_btn musicButton"onclick="hihat_open.play()">Hihat Open</button>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <footer class="row main dkgreen foot">
+            <a href="./index.html"><img src="./img/PM.png" alt="Logo" class="Logo"></a>
+            <div class="column">
+                <h4>Contact Info</h4>
+                <a href="https://www.instagram.com/pao_experience/">Instagram</a>
+                <h5>PaofueMMoua@gmail.com</h5>
+            </div>
+            <div class="column">
+                <ul class="column">
+                    <li class="nav-item"><a href="./index.html">Tsev</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
+                    <li class="nav-item"><a href="./resume.html">Resume</a></li>
+                    <li class="nav-item"><a href="./Portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./js/music.js"></script>
+        </body>
+        
+        </html>
