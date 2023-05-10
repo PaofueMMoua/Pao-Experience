@@ -37,16 +37,10 @@
     </header>
     
     <div class="main">
-        <form class="column" >
-            First name: <input type="text" name="first_name" placeholder="Ex. John"/>
-            <br>
-            Last name: <input type="text" name="last_name" placeholder="Ex. Smith"/>
-            <br>
-            Email: <input type="email" name="email" placeholder="Ex. Notreal@someplace.com"/>
-            <br>
-            Text: <textarea name="Text_info" id="" cols="30" rows="10" placeholder="Information"></textarea>
-            <br>
-            <input type="submit" value="Submit">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbzARMjeFhYUl8HaEbhhwRE7RK4JbSOgUUagKoRFFJp_kZoFiGA_tVIfZjYI1l5viqtx/exec">
+            <input name="Email" type="email" placeholder="Email" required>
+            <input name="Name" type="text" placeholder="Name" required>
+            <button type="submit">Send</button>
         </form>
     </div>
 
