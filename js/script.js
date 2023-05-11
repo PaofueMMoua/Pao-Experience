@@ -30,17 +30,3 @@ btn3.addEventListener('click', () => {
     search3.classList.toggle('active');
     input3.focus()
 })
-
-const form = document.getElementById('my-form');
-form.location.replace('https://pao-experience.netlify.app/contact.html');
-
-window.addEventListener("DOMContentLoaded", function () {
-    const yourForm = document.getElementById('my-form');
-    yourForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const data = new FormData(yourForm);
-        const action = e.target.action;
-        fetch(action, { method: 'POST', body: data, })
-            .then(() => { window.location.replace('https://pao-experience.netlify.app/contact.html') })
-    })
-});
