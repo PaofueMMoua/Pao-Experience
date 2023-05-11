@@ -102,10 +102,25 @@ body {
     width:40vw;
 }
 
+
+
+.song {
+    margin:5vh 0px 0px 0px;
+    padding:2vh 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+
 .special_song {
-    width:50vw;
-    font-size:1vw;
+    display: flex;
+    align-self:center;
+    justify-self:auto ;
+    width:40vw;
+    font-size:1.5vw;
     margin:0px 5vw;
+    
 }
 
 /* .btn {
@@ -151,6 +166,8 @@ body {
 .row {
     display:flex; 
     flex-direction:row;
+    justify-content: center;
+    align-items:center;
 }
 
 header {
@@ -246,6 +263,7 @@ h6 {
 }
 
 .main {
+    padding:2vh 0px;
     margin:5vh 0px 0px 0px;
     display:flex;
     justify-content:center;
@@ -282,6 +300,9 @@ h6 {
     color:black
 }
 
+.essay {
+    padding:0px 5vh 1vh 5vh;
+}
 
 /* Make the font stay the same after a certain screen size. */
 .abt_me_txt {
