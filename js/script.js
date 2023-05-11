@@ -31,10 +31,11 @@ btn3.addEventListener('click', () => {
     input3.focus()
 })
 
-const form = document.getElementById('my_form');
+const form = document.getElementById('my-form');
+form.location.replace('https://pao-experience.netlify.app/contact.html');
 
 window.addEventListener("DOMContentLoaded", function () {
-    const yourForm = document.getElementById('SurveyForm');
+    const yourForm = document.getElementById('my-form');
     yourForm.addEventListener("submit", function (e) {
         e.preventDefault();
         const data = new FormData(yourForm);
