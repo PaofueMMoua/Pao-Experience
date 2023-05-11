@@ -149,10 +149,19 @@ li {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
+}
+
+.car_img_1 {
     background-image: url(../img/HLD_img.png);
     background-position:center;
     background-repeat: no-repeat;
-    counter-increment: item;
+}
+
+.car_img_2 {
+    background-image: url(../img/IMG-1541_cleanup.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:90%;
 }
 
 .carousel__slide:nth-child(even) {

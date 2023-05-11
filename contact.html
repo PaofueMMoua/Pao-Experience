@@ -36,19 +36,21 @@
         </div>
     </header>
     
-    <div class="main column">
+    <div class="long column main">
         <h1>Form</h1>
         <br>
         <h3>Please fill out this form to be able to contact me.</h3>
         <br>
         <form method="POST" id="SurveyForm" class="column" action="https://script.google.com/macros/s/AKfycbwvElNyWWwun1ePESMFFFuECGzWaQuyY9GL8d7a9qb-hY91NimYJhGHdvLp_rP4gQ/exec">
+            <h3>Email</h3>
             <input class="email" name="Email" type="email" placeholder="Email" required>
+            <h3>Name</h3>
             <input class="name" name="Name" type="text" placeholder="Name" required>
-            <button type="submit">Send</button>
+            <button type="submit">Sumbit</button>
         </form>
         <script type="text/javascript">
 
-            window.addEventListener("DOMContentLoaded", function () { const yourForm = document.getElementById('SurveyForm'); yourForm.addEventListener("submit", function (e) { e.preventDefault(); const data = new FormData(yourForm); const action = e.target.action; fetch(action, { method: 'POST', body: data, }).then(() => { window.location.replace(''); alert('Form Submitted'); }) }) });
+            window.addEventListener("DOMContentLoaded", function () { const yourForm = document.getElementById('SurveyForm'); yourForm.addEventListener("submit", function (e) { e.preventDefault(); const data = new FormData(yourForm); const action = e.target.action; fetch(action, { method: 'POST', body: data, }).then(() => { window.location.replace('');  }) }) });
 
         </script>
     </div>
