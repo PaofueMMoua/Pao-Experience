@@ -31,15 +31,15 @@ btn3.addEventListener('click', () => {
     input3.focus()
 })
 
-window.addEventListener("load", function() {
-    const form = document.getElementById('my-form');
-    form.addEventListener("submit", function(e) {
+const form = document.getElementById('my_form');
+
+window.addEventListener("DOMContentLoaded", function () {
+    const yourForm = document.getElementById('SurveyForm');
+    yourForm.addEventListener("submit", function (e) {
         e.preventDefault();
-        const data = new FormData(form);
+        const data = new FormData(yourForm);
         const action = e.target.action;
-        fetch(action, {
-        method: 'POST',
-        body: data,
-        })
-    });
+        fetch(action, { method: 'POST', body: data, })
+            .then(() => { window.location.replace('https://pao-experience.netlify.app/contact.html') })
+    })
 });
