@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pao-Experience</title>
+    <title>Pao Experience</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/icon.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika:wght@300&display=swap');
     </style>
 </head>
-<body>
+
+<body class="abt">
     <header>
         <ul class="nav-bar">
             <a href="index_hmong.html"><img src="./img/PM.png" alt="Logo" class="Logo"></a>
@@ -33,18 +35,24 @@
             </div>
         </div>
     </header>
-    <div class="hero_img">
-        <div class="hero_txt">Zoo siab txais tos Pao - Experience</div>
-    </div>
     
-    <div class="main">
-        <h1>Zoo siab txais tos rau kuv lub ntiaj teb</h1>
-    </div>
-    
-    <div class="main green column">
-        <h2>Kuv Kev Paub Thiab Lub Neej.</h2>
+    <div class="long column main">
+        <h1>Ntawv</h1>
         <br>
-        <h3>Yuav ua li cas koj xav mus tshawb lub ntiaj teb no ntawm kuv?</h3>
+        <h3>Thov sau daim foos no hu rau kuv..</h3>
+        <br>
+        <form method="POST" id="SurveyForm" class="column" action="https://script.google.com/macros/s/AKfycbwvElNyWWwun1ePESMFFFuECGzWaQuyY9GL8d7a9qb-hY91NimYJhGHdvLp_rP4gQ/exec">
+            <h3>Email</h3>
+            <input class="email" name="Email" type="email" placeholder="Email" required>
+            <h3>Npe</h3>
+            <input class="name" name="Name" type="text" placeholder="Name" required>
+            <button type="submit">Xa</button>
+        </form>
+        <script type="text/javascript">
+
+            window.addEventListener("DOMContentLoaded", function () { const yourForm = document.getElementById('SurveyForm'); yourForm.addEventListener("submit", function (e) { e.preventDefault(); const data = new FormData(yourForm); const action = e.target.action; fetch(action, { method: 'POST', body: data, }).then(() => { window.location.replace('');  }) }) });
+
+        </script>
     </div>
     <footer class="row main dkgreen foot">
         <a href="./index.html"><img src="./img/PM.png" alt="Logo" class="Logo"></a>
@@ -63,12 +71,13 @@
             </ul>
         </div>
         <label class="switch">
-            <a href="./index.html">
-            <input type="checkbox" id="checkbox">
-            <span class="slider round"></span>
+            <a href="./contact.html">
+                <input type="checkbox" id="checkbox">
+                <span class="slider round"></span>
             </a>
         </label>
     </footer>
     <script src="./js/hmong.js"></script>
-</body>
-</html>
+    </body>
+    
+    </html>
