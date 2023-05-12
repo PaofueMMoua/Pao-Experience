@@ -164,6 +164,13 @@ li {
     background-size:90%;
 }
 
+.car_img_3 {
+    background-image: url(../img/score_0.png);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:90%;
+}
+
 .carousel__slide:nth-child(even) {
     background-color: #99f;
 }
