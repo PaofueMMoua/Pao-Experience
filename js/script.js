@@ -30,3 +30,44 @@ btn3.addEventListener('click', () => {
     search3.classList.toggle('active');
     input3.focus()
 })
+
+
+let c = 0;
+function random() {
+    if (c = 0) {
+        alert("why did you click me?")
+        c++
+    }
+    else if (c = 1) {
+        alert('Please stop clicking me')
+        c++
+    }else if (c = 2) {
+        alert('Please dont click me again')
+        c++
+    }else if (c = 3) {
+        alert('Why are you doing this ')
+        c++
+    }else if (c = 4) {
+        alert('You know this hurts me when you do this')
+        c++
+    }else if (c = 5) {
+        alert('Why do you still do this')
+        c++
+    }else if (c = 6) {
+        alert('I`m giving up on this ')
+        c++
+    }else if (c = 7) {
+        alert('. . .')
+        c++
+    }else if (c = 8) {
+        alert(' WHYYYYYY')
+        c++
+    }else if (c = 9) {
+        alert('WHY DO YOU DO THIS ARE YOU SOME KINDA DETECTIVE I KNOW NOTHING')
+        c++
+    }else if (c = 10) {
+        alert('I GIVE UP BECAUSE FOR SOME REASON YOU HAVE THE TIME TO SIT THERE AND CLICK THIS ONE BUTTON OVER AND OVER AND OVER AGAIN UNTILL IT JUST ANNOYES ME DONT YOU UNDERSTAND WHAT YOU ARE DOING WITHIN THIS TIME FRAME WHYYY DID YOU JUST WAIST YOUR TIME DOING THIS LIKE WHYYYYY.')
+        c = 0
+    }
+
+}
