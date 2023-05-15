@@ -344,6 +344,7 @@ h6 {
 }
 
 /* Make the font stay the same after a certain screen size. */
+
 .abt_me_txt {
     font-size:2.5vw;
     padding:2vw;
@@ -369,9 +370,8 @@ h6 {
     align-items:center; 
     justify-content:center;
 }
+
 /* Dropdown */
-
-
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -422,6 +422,10 @@ hr {
     height: 1px;
 }
 
+.gf {
+    width: 75vw;
+}
+
 /* Mobile */
 @media screen and (max-width: 900px) {
     .nav-item {
@@ -438,7 +442,53 @@ hr {
     }
 
     p {
-        font-size:2vw
+        font-size:2vw;
+    }
+
+    a {
+        font-size:3vw;
+    }    
+
+    button {
+        font-size:2vw;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    p {
+            font-size: 2vw;
+        }
+    
+        .nav-item a {
+            font-size: 2vw;
+        }
+    
+        button {
+            font-size: 2vw;
+        }
+
+    .btn,
+    .btn2,
+    .btn3 {
+        background-size:contain;
+    }
+
+    .forhead {
+        width:auto;
+        height:auto;
+    }
+
+    .abt_me {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .essay {
+        font-size:3vw;
+    }
+
+    .special_song {
+        font-size:3vw;
     }
 }
 
@@ -465,6 +515,4 @@ hr {
     padding-bottom: 1vw;
     width:5vw;
     height:5vw;
-
-
 }
