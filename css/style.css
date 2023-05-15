@@ -94,7 +94,13 @@ input:checked+.slider:before {
     flex-direction:row;
     align-items:center;
     justify-content:center;
-    width:50vw
+    width:50vw;
+}
+
+.search p,
+.search2 p,
+.search3 p {
+    color:transparent
 }
 
 .btn {
@@ -170,6 +176,8 @@ input:checked+.slider:before {
     transition:transform 1s ease;
     transform: translateX(25vw);
     width:40vw;
+    color:black;
+    font-size:1.5vw;
 }
 
 
