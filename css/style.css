@@ -67,6 +67,7 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
 .main {
     padding:2vh 0px;
     margin:5vh 0px 0px 0px;
@@ -457,4 +458,13 @@ hr {
 .forhead {
     height:50vh;
     margin:0px 4vh;
+}
+
+.switch_img {
+    display:flex;
+    padding-bottom: 1vw;
+    width:5vw;
+    height:5vw;
+
+
 }
