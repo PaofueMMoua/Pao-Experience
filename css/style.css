@@ -486,6 +486,7 @@ hr {
     }
 
     .forhead {
+        margin:1vw 4vh;
         width:auto;
         height:auto;
     }
@@ -519,7 +520,7 @@ hr {
 
 .forhead {
     height:50vh;
-    margin:0px 4vh;
+    margin:1vw 4vh;
 }
 
 .switch_img {
