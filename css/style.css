@@ -431,13 +431,17 @@ hr {
 }
 
 .gf {
-    width: 75vw;
+    width: 30vw;
 }
 
 /* Mobile */
 @media screen and (max-width: 900px) {
     .nav-item {
         display:none;
+    }
+
+    .gf {
+        width:75vw;
     }
 
     .dropdown {
