@@ -116,7 +116,7 @@ input:checked+.slider:before {
     top: 0;
     left: 0;
     height:50vh;
-    width:60vw;
+    width:50vw;
     transition: transform 1s ease;
 }
 
@@ -133,7 +133,7 @@ input:checked+.slider:before {
             top: 0;
             left: 0;
             height: 50vh;
-            width: 60vw;
+            width: 50vw;
             transition: transform 1s ease;
 }
 
@@ -150,7 +150,7 @@ input:checked+.slider:before {
             top: 0;
             left: 0;
             height: 50vh;
-            width: 60vw;
+            width: 50vw;
             transition: transform 1s ease;
 }
 
