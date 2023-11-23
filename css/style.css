@@ -95,12 +95,17 @@ input:checked+.slider:before {
     align-items:center;
     justify-content:center;
     width:50vw;
+    
 }
 
 .search p,
 .search2 p,
 .search3 p {
-    color:transparent
+    color:transparent;
+    width: 40vw;
+    color: black;
+    font-size: 1.5vw;
+    transition: transform 1s ease;
 }
 
 .btn {
@@ -173,14 +178,12 @@ input:checked+.slider:before {
 .search.active p,
 .search2.active p,
 .search3.active p {
-    transition:transform 1s ease;
     transform: translateX(25vw);
-    width:40vw;
-    color:black;
-    font-size:1.5vw;
 }
 
-
+@media screen {
+    
+}
 
 .song {
     margin:5vh 0px 0px 0px;
@@ -440,9 +443,17 @@ hr {
         display:none;
     }
 
-    .gf {
-        width:75vw;
-    }
+        .search.active .btn,
+        .search2.active .btn2,
+        .search3.active .btn3 {
+            transform: translateY(30vw);
+        }
+    
+        .search.active p,
+        .search2.active p,
+        .search3.active p {
+            transform: translateY(-25vw);
+        }
 
     .dropdown {
         display:block;
