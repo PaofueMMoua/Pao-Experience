@@ -400,7 +400,7 @@ h6 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #16835b;
+  background: radial-gradient(#ACFCD9, #3581B8);
   right: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -408,16 +408,48 @@ h6 {
 
 .dropdown-content a {
   float: none;
-  color: #e6e6e6;
+  color: #00171F;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  background: #3581B8;
+  transition: 2s;
 }
 
 .dropdown-content a:hover {
-  background: linear-gradient(133deg, #7ed55b, #8c52ff);
+  background: linear-gradient(0deg, #5dd9c030 , #5dd9c030);
+  transition: 0.5s;
 }
+/* 
+.dropdown-content .one:hover {
+  background: linear-gradient(45deg, #ACFCD9,
+    #5DD9C1,
+    #3581B8,
+    #5DD9C1,
+    #ACFCD9);
+}
+
+.dropdown-content .two:hover {
+  background: linear-gradient(-45deg,#b1ebd9,#7FD8BE,#A1FCDF,#d7aad7,#904C77);
+}
+
+.dropdown-content .three:hover {
+  background: linear-gradient(90deg, 
+    #3581B8,
+    #5DD9C1,
+    #ACFCD9,
+    #BFACC8,
+    #783F8E);
+}
+
+.dropdown-content .four:hover {
+  background: linear-gradient(90deg, #3581B8,#3581B8,#3581B8, #3581B8, #3581B8, #DEE2D6, #DEE2D6 );
+} */
+/* 
+.dropdown-content .one:hover::after {
+  transition-duration: 3ms;
+} */
 
 .dropdown:hover .dropdown-content {
   display: block;
