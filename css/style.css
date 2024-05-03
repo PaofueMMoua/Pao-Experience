@@ -116,17 +116,10 @@ input:checked + .slider:before {
 }
 
 .btn {
-  background: url(../img/Delve_img.png);
-  background-color: #d8f4fa;
-  border: 0;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  cursor: pointer;
   font-size: 2rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  display:flex;
+  justify-content: center;
   height: 50vh;
   width: 50vw;
   transition: transform 1s ease;
