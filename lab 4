@@ -1,0 +1,143 @@
+#ifndef APPLICATION_H
+#define APPLICATION_H
+
+#include <bobcat_ui/bobcat_ui.h>
+#include <bobcat_ui/window.h>
+#include <bobcat_ui/list_box.h>
+#include <bobcat_ui/button.h>
+#include <bobcat_ui/input.h>
+#include <fstream>
+#include <string>
+
+namespace bobcat {
+
+class Application: public Application_ {
+    Window* window;
+    ListBox* contactsList;
+    Button* loadContactButton;
+    Button* deleteContactButton;
+    Input* firstNameInput;
+    Input* lastNameInput;
+    Input* phoneNumberInput;
+    Button* clearInformationButton;
+    Button* createContactButton;
+
+    // helper function to delete a file from the filesystem, given its filepath
+    void deleteFile(std::string filePath) {
+        std::string removeCommand = "rm -f " + filePath;
+        system(removeCommand.c_str());
+    }
+
+    void deleteContact(Widget* sender) {
+        // TODO
+    }
+
+    void loadContact(Widget* sender) {
+        // TODO
+        std::string customerName = contactsList->getselected();
+
+        if (customerName != "") {
+            std::string filePath = "contacts/" + customerName + ".txt";
+            std::fstream file(contacts.txt);
+            std::string firstName;
+            std::string lastName;
+            int PhoneNumber;
+            if (file.is_open()) {
+                std::string line;
+                getline(file, line);
+
+                getline(file, line);
+                firstName = line.substr(0, line.find(','));
+
+                getline(file, line);
+                lastName = line.substr(0, line.find(','));
+
+                getline(file, line);
+                phoneNumber = std::stoi(line.substr(0, line.find(',')));
+                file.close();
+            }
+            firstNameInput->label(firstName);
+            lastNameInput->label(lastName);
+            phoneNumberInput->label(std::to_string(phoneNumber));
+        }
+        else {
+            showMessage(message)
+        }
+    }
+
+    void createContact(Widget* sender) {
+        // TODO
+    
+    std::fstream file("/.remote/" + filename + ".txt");
+    if (file.is_open()) {
+        file << customer<< std::endl;
+        file.close();
+    }
+    }
+
+    void savecustomerdata(Widget* sender) {
+            if (firstName->empty() && lastName->empty && phoneNumber->empty()) {
+    } {
+        std::string customer = customerInput->value();
+        std::string firstName = firstNameInput->value();
+        std::string lastName = lastNameInput->value();
+        int phone = phoneNumber->value();
+
+        bool customerExists = false;
+        for (int i = 0; i < contactsList->size(); i++) {
+            if (contactsList->getindex(i) == customer) {
+                customerExists = true;
+                break;
+            }
+        }
+
+        if (customerExists) {
+            createContact(customer, "contacts.txt");
+            populate
+        }
+    }
+
+     
+    savecustomerdata(customer, firstname, lastname, phone);
+    }
+
+    void clearInformation(Widget* sender) {
+        // TODO
+
+    }
+
+public:
+    Application() {
+        theme();
+
+        window = new Window(100, 100, 400, 400, "Contacts Manager");
+
+        contactsList = new ListBox(25, 25, 350, 150, "Contacts");
+
+        loadContactButton = new Button(25, 195, 150, 25, "Load Contact");
+
+        deleteContactButton = new Button(225, 195, 150, 25, "Delete Contact");
+
+        firstNameInput = new Input(25, 250, 150, 25, "First Name");
+
+        lastNameInput = new Input(225, 250, 150, 25, "Last Name");
+
+        phoneNumberInput = new Input(25, 300, 350, 25, "Phone Number");
+
+        clearInformationButton = new Button(25, 350, 150, 25, "Clear Information");
+        
+        createContactButton = new Button(225, 350, 150, 25, "Create Contact");
+
+        ON_CLICK(loadContactButton, loadContact);
+        ON_CLICK(deleteContactButton, deleteContact);
+        ON_CLICK(createContactButton, savecustomerdata);
+        ON_CLICK(clearInformationButton, clearInformation);
+
+        window->show();
+    }
+
+    friend struct ::AppTest;
+};
+
+}
+#endif
